@@ -1,0 +1,16 @@
+v4.0 (18:49 29/03/2004)
+---------------------------
+Amazing how far the bsGradientLabel has come, huh?
+
+Anyways, some wiseguy wanted to highlight the fact that Windows 95 doesn't have msimg32.dll as standard, as an excuse to complain about the code. Fair enough, I should have mentioned that detail as soon as I had found out myself, but if he/she wanted to score brownie points then they have failed.
+
+Bearing this little thing in mind, I decided to update the code to get rid of reliance on msimg32.dll, and hopefully make it more efficient at the same time. I searched PSC and found the clsGradient class, written by Rocky Clark of Kath-Rock Software, which draws gradients (at angles, too) super-fast and is well renowned. The only problem is it only supports PictureBoxes and not device contexts (out of the box anyway, I soon modified it to suit my needs).
+
+This left the problem concerning 4-way gradients. For this, I searched PSC again to save myself a bit of coding. A totally independent solution came from the genius that is known as Rohit Kulshreshtha. Big shout goes out to him/her too.
+
+
+prior to v4.0
+---------------------------
+I wasn't sure if I had a worklog for this control to begin with, so I decided to start one now.
+
+The bsGradientLabel started life as a single-line control, that acted as a Label control but with a gradient background. Over time it has inherited three types of gradient, border styles, text alignment, padding, text orientation and a text shadow.

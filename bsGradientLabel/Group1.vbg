@@ -1,0 +1,4 @@
+VBGROUP 5.0
+StartupProject=bsGLTest.vbp
+Project=Source\bsGradientLabel.vbp
+Project=Colour picker\ClrPckr.vbp
